@@ -29,22 +29,22 @@ const getWeather=async (city)=>
         climate.textContent=main;
         tempvalue.textContent=Math.round(feels_like-273);
         if(id<300 && id>200){
-            tempicon.src="./icons/thunderstorm.svg"
+            tempicon.src="thunderstorm.svg"
         }
        	else  if(id<400 && id>300){
-            tempicon.src="./icons/cloud-solid.svg"
+            tempicon.src="cloud-solid.svg"
         }
        	else if(id<600&& id>500){
-            tempicon.src="./icons/rain.svg"
+            tempicon.src="rain.svg"
         }
        	else  if(id<700 && id>600){
-            tempicon.src="./icons/snow.svg"
+            tempicon.src="snow.svg"
         }
       	else  if(id<800 && id>700){
-            tempicon.src="./icons/clouds.svg"
+            tempicon.src="clouds.svg"
         }
         else if(id==800){
-            tempicon.src="./icons/clouds-and-sun.svg"
+            tempicon.src="clouds-and-sun.svg"
         }
     }
 	catch(error){
@@ -91,27 +91,27 @@ if(navigator.geolocation)
                     tempvalue.textContent=Math.round(feels_like-273);
                     if(id<300 && id>200)
                     {
-                        tempicon.src="./icons/thunderstorm.svg"
+                        tempicon.src="thunderstorm.svg"
                     }
                    else  if(id<400 && id>300)
                     {
-                        tempicon.src="./icons/cloud-solid.svg"
+                        tempicon.src="cloud-solid.svg"
                     }
                    else if(id<600&& id>500)
                     {
-                        tempicon.src="./icons/rain.svg"
+                        tempicon.src="rain.svg"
                     }
                    else  if(id<700 && id>600)
                     {
-                        tempicon.src="./icons/snow.svg"
+                        tempicon.src="snow.svg"
                     }
                    else  if(id<800 && id>700)
                     {
-                        tempicon.src="./icons/clouds.svg"
+                        tempicon.src="clouds.svg"
                     }
                      else if(id==800)
                     {
-                        tempicon.src="./icons/clouds-and-sun.svg"
+                        tempicon.src="clouds-and-sun.svg"
                     }
 
 
